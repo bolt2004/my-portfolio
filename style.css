@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #222;
+}
+
+h2 {
+    font-size: 30px;
+    color: #555;
+}
+
+p {
+    font-size: 20px;
+    color: #666;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+nav h2 {
+    color: #222;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #777;
+
+}
+
+#about {
+    background-color: white;
+    padding: 80px 50px;
+    margin-top: 100px;
+
+}
+
+#about h2 {
+    font-size: 35px;
+    margin: 20px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.6;
+
+}
+
+#skills {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 250px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: o 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    font-size: 25px;
+
+}
+
+.skill-card p {
+    font-size: 16px;
+}
+
+#projects {
+    background-color: #f5f5f5;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 24px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+#contact h2 {
+
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+input textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+footer p {
+    color: #ccc;
+
+}
+
+.social links {
+    margin-top: 20px;
+}
+
+.social links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* "mobile responsive Design" */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        padding: 0;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #contact {
+        padding: 50px 20px;
+
+    }
+
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .skill-card,
+    .project-card {
+        width: 90px;
+        max-width: 350px;
+
+    }
+
+
+
+
+}
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 50px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.intro {
+    font-size: 22px;
+    color: #666;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 30px;
+    color: #555;
+}
+
+.home-content>p {
+    line-height: 1.6;
+}
+
+.home-buttons {
+    margin-top: 25px;
+}
+
+.home-buttons a {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.home-buttons a,
+.project-btn,
+form button {
+    transition: 0.3s;
+}
+
+.home-buttons a:hover,
+.project-btn:hover,
+form button:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+.skill-card,
+.project-card {
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.home-image img {
+    transition: 0.3s;
+
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
